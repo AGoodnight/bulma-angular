@@ -1,7 +1,7 @@
 import {Component,OnInit,OnDestroy,AfterViewInit,ViewEncapsulation} from '@angular/core';
 import {Store} from '@ngrx/store';
 import {Observable,Subject} from 'rxjs/Rx';
-import {Router,ActivatedRoute} from '@angular/router';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'body',
@@ -17,7 +17,6 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy{
   public ngUnsubscribe:Subject<any> = new Subject();
 
   constructor(
-    private activatedRoute:ActivatedRoute,
     private ngrxstore:Store<any>,
     private router:Router
   ) {}

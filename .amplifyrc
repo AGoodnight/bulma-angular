@@ -1,0 +1,14 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "bulmaangular-20190110102856-authRole",
+            "UnauthRoleArn": "arn:aws:iam::696610291095:role/bulmaangular-20190110102856-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::696610291095:role/bulmaangular-20190110102856-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "bulmaangular-20190110102856-deployment",
+            "UnauthRoleName": "bulmaangular-20190110102856-unauthRole",
+            "StackName": "bulmaangular-20190110102856",
+            "StackId": "arn:aws:cloudformation:us-east-2:696610291095:stack/bulmaangular-20190110102856/71bc3d30-14ec-11e9-8626-02278d0d93fc"
+        }
+    }
+}
