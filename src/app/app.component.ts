@@ -32,10 +32,6 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy{
     this.router.events
       .takeUntil(this.ngUnsubscribe)
       .subscribe((path) => {
-        let  _background = ''
-        if(path['url']){
-          _background = path['url'].substring(1);
-        }
         if(path['url']!=='/' && path['url']){
           this.ngrxstore.dispatch({type:'CURRENT_ROUTE_URL',payload:path['url']})
         }

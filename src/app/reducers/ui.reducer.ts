@@ -1,5 +1,5 @@
 import { Action } from '@ngrx/store';
-import merge from 'lodash/merge';
+import merge = require('lodash/merge');
 
 export interface ActionWithPayload<T> extends Action {
   payload: T;
