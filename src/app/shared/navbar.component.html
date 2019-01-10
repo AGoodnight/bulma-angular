@@ -1,0 +1,20 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" [routerLink]="['/',ROUTES.HOME]">
+      <img src="../../assets/img/logo.png" alt="Bulma Angular Logo" width="52" height="52">
+    </a>
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" (click)='toggleBurger($event)'>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="primary-menu" class="navbar-menu" [ngClass]="{'is-active' : burgerOpen}">
+    <div class="navbar-start">
+      <a class="navbar-item" [routerLink]="['/',ROUTES.HOME]">
+        Home
+      </a>
+    </div>
+  </div>
+</nav>
